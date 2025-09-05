@@ -1,5 +1,21 @@
+main{
+  font-family: "Roboto", sans-serif;
+  font-optical-sizing: auto;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+}
+
+footer{
+  bottom: 0;
+  position: fixed;
+  max-width: 100%;
+}
+
 .header__imagem{
-  margin: 0;
+  margin-right: 30px;
   max-width: 150px;
   max-height: 100px;
   width: 150px;
@@ -7,16 +23,18 @@
 }
 
 .header{
+  max-width: 100%;
+  gap: 10px;
   display: flex;
   flex-direction: row;
-  gap: 10px;
   align-items: center;
   justify-content:space-between;
+  box-shadow: 0px 1px 10px rgba(0, 0, 0, 0.5);
 }
 
 .nav{
   padding: 0px;
-  gap: 10px;
+  gap: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
@@ -28,8 +46,30 @@
   margin: 10px;
 }
 
+.nav__itemhome{
+  list-style: none;
+}
+
+.nav__navbar{
+  margin-right: 115px;
+  border-radius: 20px;
+  padding: 10px;
+  width: 300px;
+}
+
+.navbar__button{
+  position: absolute;
+  height: 100px;
+  width: 100px;
+  max-width: 100px;
+  max-height: 100px;
+
+}
+
 .nav__div{
+  position: relative;
   margin-left: 30px;
+  margin-right: 20px;
   align-items: center;
   text-align: center;
 }
@@ -42,7 +82,7 @@
 
 .nav__btn{
   position: relative;
-  border-radius: 20px;
+  border-radius: 12px;
   padding: 15px;
   border: none;
   background-color: darkkhaki;
